@@ -1,4 +1,4 @@
-module github.com/azazeal/singleflight
+module github.com/smallstep/singleflight
 
 go 1.18
 
