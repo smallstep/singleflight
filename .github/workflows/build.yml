@@ -3,19 +3,21 @@ name: Build
 on:
   push:
     tags-ignore:
-      - "**"
+      - "v*"
     branches:
-      - master
+      - "**"
   pull_request:
-    types:
-      - opened
-      - synchronize
+  schedule:
+    - cron: '0 0 * * SUN'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build
-    uses: azazeal/workflows/.github/workflows/golib.yml@v1.0.2
+  lint:
+    uses: smallstep/workflows/.github/workflows/goLint.yml@main
+
+  test:
+    needs: lint
+    uses: smallstep/workflows/.github/workflows/goTest.yml@main
