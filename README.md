@@ -1,6 +1,4 @@
-[![Build Status](https://github.com/azazeal/singleflight/actions/workflows/build.yml/badge.svg)](https://github.com/azazeal/singleflight/actions/workflows/build.yml)
-[![Coverage Report](https://coveralls.io/repos/github/azazeal/singleflight/badge.svg?branch=master)](https://coveralls.io/github/azazeal/singleflight?branch=master)
-[![Go Reference](https://pkg.go.dev/badge/github.com/azazeal/singleflight.svg)](https://pkg.go.dev/github.com/azazeal/singleflight)
+[![Build Status](https://github.com/smallstep/singleflight/actions/workflows/build.yml/badge.svg)](https://github.com/smallstep/singleflight/actions/workflows/build.yml)
 
 # singleflight
 
@@ -21,7 +19,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/azazeal/singleflight"
+	"github.com/smallstep/singleflight"
 )
 
 func main() {
