@@ -1,4 +1,4 @@
-PKG?=github.com/smallstep/sshutil
+PKG?=github.com/smallstep/singleflight
 
 # Set V to 1 for verbose output from the Makefile
 Q=$(if $V,,@)
