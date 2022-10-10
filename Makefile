@@ -26,6 +26,7 @@ bootstra%:
 #########################################
 # Test
 #########################################
+
 test:
 	$Q $(GOFLAGS) gotestsum -- -coverprofile=coverage.out -short -covermode=atomic ./...
 
